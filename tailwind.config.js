@@ -4,16 +4,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: [""],
+        primary: ["#BD1820", "#E3252E", "#9E1219"],
         secondary: [""],
-        dark: [""],
-        light: [""],
+        dark: ["#212121"],
+        light: ["#2961A6"],
       },
       backgroundColor: {
-        primary: [""],
+        primary: ["#BD1820", "#E3252E", "#9E1219"],
         secondary: [""],
-        dark: [""],
-        light: [""],
+        dark: ["#212121"],
+        light: ["#2961A6"],
+      },
+      fontFamily: {
+        Segment: "Seven Segment",
+      },
+      screens: {
+        xs: "450px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        xxl: "1536px",
       },
     },
   },

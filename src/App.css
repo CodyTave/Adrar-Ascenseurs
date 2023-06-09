@@ -1,5 +1,6 @@
 #root {
-  max-width: 1920;
+  max-width: 1920px;
+  min-width: 300px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -56,4 +57,10 @@ img {
   width: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
+}
+@font-face {
+  font-family: "Seven Segment";
+  src: url("./assets/Fonts/Seven\ Segment.ttf");
+  font-weight: normal;
+  font-style: normal;
 }

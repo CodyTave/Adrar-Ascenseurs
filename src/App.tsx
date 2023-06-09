@@ -8,12 +8,12 @@ import Navbar from "./sections/Navbar";
 function App() {
   return (
     <>
-      <div className="grid gap-32">
+      <div className="grid gap-32 text-dark-0">
         <Navbar />
-        <Hero />
+        {/* <Hero />
         <About />
         <Contact />
-        <Footer />
+        <Footer /> */}
       </div>
     </>
   );
