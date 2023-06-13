@@ -42,6 +42,7 @@ function ToggleBurger({ toggled, setToggle }: props) {
   return (
     <>
       <svg
+        className="cursor-pointer relative"
         onClick={() => {
           Animate();
           setToggle();
