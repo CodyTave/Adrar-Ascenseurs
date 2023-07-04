@@ -25,8 +25,8 @@ function Services() {
   }
   return (
     <div className="h-[80vh]">
-      <div className="grid grid-cols-2">
-        <div className="grid grid-cols-2 h-1/2 my-auto text-light-0 font-semibold">
+      <div className="grid lg:grid-cols-2 gap-y-20">
+        <div className="grid grid-cols-2 gap-10 my-auto text-light-0 font-semibold">
           <div
             onClick={() => {
               if (!isAnimating) {
@@ -52,21 +52,13 @@ function Services() {
         </div>
         <div className="flex justify-center ">
           <div className="relative">
-            <div className="flex justify-center items-center bg-primary-0 w-40 h-10 mb-5  mx-auto rounded-lg overflow-hidden">
-              <AnimatePresence>
-                <motion.div
-                  className="flex justify-center items-center h-10 relative"
-                  initial={{ y: -100 }}
-                  animate={{ y: 0 }}
-                  exit={{ y: -100 }}
-                  transition={{ duration: 1 }}
-                  key={floorStop}
-                >
-                  <h1 className="text-light-0 font-Segment ">
-                    {elevator[floorStop].title}
-                  </h1>
-                </motion.div>
-              </AnimatePresence>
+            <div className=" flex justify-center items-center bg-primary-0 w-40 h-10 mb-5  mx-auto rounded-lg overflow-hidden">
+              <motion.div
+                className="flex justify-center items-center h-10  font-Segment text-light-0"
+                key={floorStop}
+              >
+                {elevator[floorStop].title}
+              </motion.div>
             </div>
             <Elevator
               isOpen={isOpen}
@@ -74,7 +66,7 @@ function Services() {
                 setOpen(!isOpen);
               }}
             />
-            <div className="absolute top-1/2 mt-8 -translate-y-1/2 translate-x-1/2 right-1/2 -z-50 font-semibold text-primary-0 text-left">
+            <div className="absolute top-1/2 mt-8 w-[70%]  -translate-y-1/2 translate-x-1/2 right-1/2 -z-50 font-semibold text-primary-0 text-left">
               {elevator[floorStop].text}
             </div>
           </div>
