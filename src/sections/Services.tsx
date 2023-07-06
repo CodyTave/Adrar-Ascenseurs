@@ -72,7 +72,7 @@ function Services() {
           <div className="relative">
             <div className=" flex justify-center items-center bg-dark-0 w-40 h-10 mb-5  mx-auto rounded-lg overflow-hidden">
               <motion.div
-                className="flex justify-center items-center h-10  font-Segment text-light-0"
+                className="flex justify-center items-center h-10 font-Seg text-light-0"
                 key={floorStop}
               >
                 {elevator[floorStop].title}
