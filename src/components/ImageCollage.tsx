@@ -6,7 +6,7 @@ function ImageCollage({ img1, img2 }: images) {
   return (
     <div className="relative">
       <img className="w-96" src={img1} />
-      <img className="absolute w-60 right-0 sm:left-72 top-36" src={img2} />
+      <img className="absolute w-60 right-5 sm:left-72 top-36" src={img2} />
     </div>
   );
 }
