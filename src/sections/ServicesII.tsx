@@ -22,7 +22,7 @@ function ServicesII() {
               <p className=" font-normal text-lg  mt-5">{Elevators.text} </p>
             </div>
             <div className="lg:flex lg:mx-auto">
-              <ImageCollage img1={escImage1} img2={escImage2} />
+              <ImageCollage img1={ascImage1} img2={ascImage1} />
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ function ServicesII() {
               <p className=" font-normal text-lg  mt-5">{Escalators.text} </p>
             </div>
             <div className="lg:flex lg:mx-auto">
-              <ImageCollage img1={ascImage1} img2={ascImage2} />
+              <ImageCollage img1={escImage1} img2={escImage2} />
             </div>
           </div>
         </div>
