@@ -11,8 +11,8 @@ import {
 
 function ServicesII() {
   return (
-    <div id="second">
-      <div className="mb-40">
+    <div className="md:mx-0 mx-8" id="second">
+      <div className="mb-40 ">
         <div className="grid justify-items-center md:w-[80%] mx-auto ">
           <div className="flex md:gap-16 ">
             <div className="my-10 text-left  lg:w-1/2">

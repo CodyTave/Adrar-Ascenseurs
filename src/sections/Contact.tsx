@@ -3,7 +3,10 @@ import InputField from "../components/InputField";
 
 function Contact() {
   return (
-    <div id="first" className="grid grid-cols-2 mx-auto md:w-[80%] ">
+    <div
+      id="first"
+      className="grid lg:grid-cols-2 gap-y-10 mx-auto md:w-[80%] md:px-0 px-8   "
+    >
       <div className="flex flex-col gap-5">
         <h1 className=" text-left text-4xl font-bold">CONTACT</h1>
         <InputField type="input" label="Nom :" ph="Saisir Votre Nom" />
@@ -14,7 +17,7 @@ function Contact() {
           ph="Saisir Votre Message"
         />
       </div>
-      <div className="flex gap-10 justify-center items-center flex-col">
+      <div className="flex gap-10 justify-center items-center flex-col text-left">
         <div className="grid gap-10 ">
           <div className="flex gap-5 ">
             <img src={location} />

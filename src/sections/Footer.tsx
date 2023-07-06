@@ -3,9 +3,9 @@ import { LogotWhite } from "../assets";
 
 function Footer() {
   return (
-    <div
+    <footer
       id="zero"
-      className="flex flex-col justify-center items-center bg-dark-0 p-28 gap-16"
+      className="flex flex-col justify-center items-center  py-28 px-10 gap-16"
     >
       <Link
         spy={true}
@@ -18,10 +18,10 @@ function Footer() {
       >
         <img className="w-28 cursor-pointer" src={LogotWhite} />
       </Link>
-      <h1 className="text-light-0 font-semibold">
+      <h1 className="text-light-0 text-left font-semibold line-clamp-3">
         © COPYRIGHT 2023 , ADRAR ASCENSEURS TOUS LES DROITS SONT RÉSERVÉS.
       </h1>
-    </div>
+    </footer>
   );
 }
 
