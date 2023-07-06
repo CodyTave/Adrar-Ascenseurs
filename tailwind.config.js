@@ -28,6 +28,7 @@ export default {
         xl: "1280px",
         xlp: "1400px",
         xxl: "1536px",
+        xxxl: "2400px",
       },
       borderRadius: {
         conv: "25px",

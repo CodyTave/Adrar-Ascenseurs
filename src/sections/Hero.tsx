@@ -5,7 +5,7 @@ import ImageCollage from "../components/ImageCollage";
 function Hero() {
   return (
     <>
-      <div className="sm:h-[80vh] md:mx-0 mx-8">
+      <div className="sm:h-[80vh] xxxl:h-full md:mx-0 mx-8">
         <div className="grid justify-items-center md:w-[80%] mx-auto ">
           <div className="flex md:gap-16 ">
             <div className="my-10 text-left  lg:w-1/3">

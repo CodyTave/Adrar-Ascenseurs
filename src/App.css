@@ -12,12 +12,6 @@
   background-color: #212121;
 }
 
-/* @media (max-width: 768px) {
-  body > *:not(#zero) {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-} */
 img {
   user-select: none;
   -webkit-user-drag: none;

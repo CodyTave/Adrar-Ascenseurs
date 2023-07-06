@@ -31,7 +31,9 @@ function Contact() {
           </div>
           <div className="flex gap-5">
             <img src={email} />
-            <h1 className="font-semibold text-lg">adrarascenseur@gmail.com</h1>
+            <h1 className="font-semibold text-lg break-all">
+              adrarascenseur@gmail.com
+            </h1>
           </div>
         </div>
       </div>

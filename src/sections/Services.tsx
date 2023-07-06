@@ -43,7 +43,7 @@ function Services() {
     }
   }
   return (
-    <div ref={ref} id="fourth" className="lg:h-[80vh] md:mx-0 mx-8">
+    <div ref={ref} id="fourth" className="lg:h-[80vh] xxxl:h-full md:mx-0 mx-8">
       <div className="grid lg:grid-cols-2 gap-y-20">
         <div className="grid msm:grid-cols-2 gap-10 my-auto text-light-0 font-semibold">
           <div
