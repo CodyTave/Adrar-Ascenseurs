@@ -1,23 +1,32 @@
-export const navLinks: Array<{ id: string; title: string; order: string }> = [
+export const navLinks: Array<{
+  id: string;
+  title: string;
+  order: string;
+  floor: string;
+}> = [
   {
     id: "home",
     title: "Home",
     order: "order-0",
+    floor: "fifth",
   },
   {
     id: "services",
     title: "Services",
     order: "order-1",
+    floor: "fourth",
   },
   {
     id: "about",
     title: "Á Propos",
     order: "order-2",
+    floor: "third",
   },
   {
     id: "contact",
     title: "Contact",
     order: "order-3",
+    floor: "first",
   },
 ];
 
@@ -26,11 +35,11 @@ export const elevatorLinks: Array<{
   Number: number;
   section: string;
 }> = [
-  { id: "five", Number: 5, section: "hero" },
-  { id: "four", Number: 4, section: "services" },
-  { id: "three", Number: 3, section: "about" },
-  { id: "two", Number: 2, section: "services2" },
-  { id: "one", Number: 1, section: "contact" },
+  { id: "fifth", Number: 5, section: "hero" },
+  { id: "fourth", Number: 4, section: "services" },
+  { id: "third", Number: 3, section: "about" },
+  { id: "second", Number: 2, section: "services2" },
+  { id: "first", Number: 1, section: "contact" },
   { id: "zero", Number: 0, section: "footer" },
 ];
 
@@ -98,3 +107,35 @@ export const elevator: Array<{ id: string; title: string; text: string }> = [
   `,
   },
 ];
+
+export const AboutText = {
+  title: "Á Propos De Nous",
+  text: `est une entreprise spécialisée dans la fabrication et l'installation d'ascenseurs.
+   Fondée en 2009 par des experts de l'industrie des ascenseurs,
+    l'entreprise a rapidement établi sa réputation en proposant des produits de qualité supérieure et un service client 
+    exceptionnel. Adrar Ascenseurs se concentre sur la fabrication d'ascenseurs à haute performance
+     pour les immeubles résidentiels, commerciaux et industriels.
+      La société utilise des technologies de pointe pour garantir des ascenseurs fiables,
+       efficaces et sûrs pour ses clients.
+        Adrar Ascenseurs s'engage à fournir des solutions d'ascenseurs adaptées aux besoins de chaque client,
+         tout en respectant les normes de sécurité et les réglementations en vigueur.`,
+};
+export const Elevators = {
+  title: "Ascenseurs",
+  text: `Nous proposons des services d'installation et de réparation professionnels pour les ascenseurs. Nous sommes spécialisés dans l'installation, la maintenance et la réparation des ascenseurs pour les immeubles résidentiels, commerciaux et industriels. Nous travaillons avec les meilleures marques et les plus récentes technologies pour garantir des ascenseurs sûrs, fiables et efficaces pour nos clients. Contactez-nous dès maintenant pour discuter de vos besoins en matière d'ascenseurs et pour obtenir un devis gratuit.
+  `,
+};
+export const Escalators = {
+  title: "Escalateurs",
+  text: `
+  Adrar Ascenseurs offre des services d'installation, maintenance et réparation professionnels pour les escaliers mécaniques. Nous sommes experts dans la mise en place, l'entretien et la réparation des escaliers mécaniques pour les bâtiments résidentiels, commerciaux et industriels. Nous utilisons les meilleures marques et les dernières technologies pour garantir des escaliers mécaniques sûrs, fiables et efficaces pour nos clients. Contactez-nous dès maintenant pour discuter de vos besoins en matière d'escaliers mécaniques et pour obtenir un devis gratuit.
+
+
+  `,
+};
+export const lifts = {
+  title: "Monte charge",
+  text: `
+  Adrar offre des services d'installation, maintenance et réparation professionnels pour les monte-charges. Nous sommes spécialisés dans la mise en place, l'entretien et la réparation des monte-charges pour les bâtiments résidentiels, commerciaux et industriels. Nous travaillons avec les meilleures marques et les dernières technologies pour garantir des monte-charges sûrs, fiables et efficaces pour nos clients. Contactez-nous dès maintenant pour discuter de vos besoins en matière de monte-charges et pour obtenir un devis gratuit.
+  `,
+};

@@ -3,30 +3,40 @@ import { logo } from "../assets";
 import { navLinks } from "../constants/constants";
 import ToggleBurger from "../components/ToggleBurger";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-scroll";
 
 function Navbar() {
-  const [active, setActive] = useState(0);
   const [toggled, setToggle] = useState(false);
   return (
     <>
-      <nav className="md:flex hidden  justify-center items-center gap-20 font-semibold">
-        {navLinks.map((nav, index) => (
+      <nav
+        id="fifth"
+        className="md:flex hidden  justify-center items-center gap-20 font-semibold mb-20"
+      >
+        {navLinks.map((nav) => (
           <div
-            onClick={() => {
-              setActive(index);
-            }}
             key={nav.id}
             className={`${nav.order} ${
-              active === index && "text-primary-0"
+              nav.id === "home" && "text-primary-0"
             } hover:text-primary-0  transall cursor-pointer`}
           >
-            {nav.title}
+            <Link
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              offset={-50}
+              delay={200}
+              duration={1000}
+              to={nav.floor}
+            >
+              {nav.title}
+            </Link>
           </div>
         ))}
         <img className="order-1 cursor-pointer" src={logo} />
       </nav>
-      <nav className="grid gap-10 ">
-        <div className="flex md:hidden justify-center items-center gap-20 ">
+      <nav id="fifth" className="grid md:hidden gap-10 ">
+        <div className="flex  justify-center items-center gap-20 ">
           <img className="cursor-pointer" src={logo} />
           <ToggleBurger
             toggled={toggled}
@@ -45,15 +55,22 @@ function Navbar() {
             >
               {navLinks.map((nav, index) => (
                 <div
-                  onClick={() => {
-                    setActive(index);
-                  }}
                   key={nav.id}
-                  className={`${nav.order}  ${
-                    active === index && "text-primary-0"
+                  className={`${nav.order} ${
+                    nav.id === "home" && "text-primary-0"
                   } hover:text-primary-0  transall cursor-pointer`}
                 >
-                  {nav.title}
+                  <Link
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={-50}
+                    delay={200}
+                    duration={1000}
+                    to={nav.floor}
+                  >
+                    {nav.title}
+                  </Link>
                 </div>
               ))}
             </motion.div>
