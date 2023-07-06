@@ -18,7 +18,7 @@ function About() {
                 {AboutText.text}
               </p>
             </div>
-            <div className="lg:flex   lg:mx-auto">
+            <div className="lg:flex lg:mx-auto">
               <ImageCollage img1={aboutImage1} img2={aboutImage2} />
             </div>
           </div>
