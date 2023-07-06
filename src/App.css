@@ -71,7 +71,7 @@ img {
 }
 @font-face {
   font-family: "Seven Segment";
-  src: url("./assets/Fonts/Seven\ Segment.ttf");
+  src: url("/public/Fonts/Seven\ Segment.ttf");
   font-weight: normal;
   font-style: normal;
 }
