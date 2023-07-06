@@ -30,10 +30,10 @@ function ElevatorNav() {
               delay={200}
               duration={1000}
               to={floor.id}
+              key={floor.id}
             >
               <button
                 onClick={() => goTo(floor.Number)}
-                key={floor.id}
                 className={`font-semibold cursor-pointer 
              transall  text-xl 
               w-10 h-10 rounded-full flex justify-center ${

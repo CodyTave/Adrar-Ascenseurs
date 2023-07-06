@@ -3,6 +3,7 @@ import Elevator from "../components/Elevator";
 import { elevator } from "../constants/constants";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-scroll";
 
 function Services() {
   const [isOpen, setOpen] = useState(false);
@@ -57,18 +58,26 @@ function Services() {
           </div>
           {elevator.map((floor, index) => (
             <div key={floor.id} className="flex justify-center items-center">
-              <button
-                onClick={() => {
-                  Ascend(index);
-                }}
-                className="w-48 py-3 rounded-full bg-primary-0 hover:bg-primary-2"
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-200}
+                duration={1000}
+                to="elv"
               >
-                {floor.title}
-              </button>
+                <button
+                  onClick={() => {
+                    Ascend(index);
+                  }}
+                  className="w-48 py-3 rounded-full bg-primary-0 hover:bg-primary-2"
+                >
+                  {floor.title}
+                </button>
+              </Link>
             </div>
           ))}
         </div>
-        <div className="flex justify-center ">
+        <div id="elv" className="flex justify-center ">
           <div className="relative">
             <div className=" flex justify-center items-center bg-dark-0 w-40 h-10 mb-5  mx-auto rounded-lg overflow-hidden">
               <motion.div
