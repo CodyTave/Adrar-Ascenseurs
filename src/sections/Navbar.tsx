@@ -53,7 +53,7 @@ function Navbar() {
               exit={{ y: -20, opacity: 0 }}
               className="grid gap-10 font-semibold "
             >
-              {navLinks.map((nav, index) => (
+              {navLinks.map((nav) => (
                 <div
                   key={nav.id}
                   className={`${nav.order} ${
