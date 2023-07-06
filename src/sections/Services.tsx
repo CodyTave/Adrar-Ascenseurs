@@ -9,7 +9,7 @@ function Services() {
   const [floorStop, setStop] = useState(0);
   const [isAnimating, setAnimate] = useState(false);
   const [ref, inView] = useInView({
-    threshold: 1, // Trigger when section is fully visible
+    threshold: 0.5, // Trigger when section is fully visible
   });
   useEffect(() => {
     if (inView) {
