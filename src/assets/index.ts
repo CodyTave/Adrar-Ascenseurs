@@ -14,6 +14,7 @@ import location from "./Location.svg";
 import phone from "./Phone.svg";
 import email from "./@.svg";
 import LogotWhite from "./LogoWhite.svg";
+import up from "./up.svg";
 export {
   logo,
   textLogo,
@@ -31,4 +32,5 @@ export {
   phone,
   email,
   LogotWhite,
+  up,
 };

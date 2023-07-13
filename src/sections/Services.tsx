@@ -10,7 +10,7 @@ function Services() {
   const [floorStop, setStop] = useState(0);
   const [isAnimating, setAnimate] = useState(false);
   const [ref, inView] = useInView({
-    threshold: 0.5, // Trigger when section is fully visible
+    threshold: 0.3, // Trigger when section is fully visible
   });
   useEffect(() => {
     if (inView) {
@@ -61,7 +61,7 @@ function Services() {
               <Link
                 spy={true}
                 smooth={true}
-                offset={-200}
+                offset={-25}
                 duration={1000}
                 to="elv"
               >
@@ -93,7 +93,10 @@ function Services() {
                 setOpen(!isOpen);
               }}
             />
-            <div className="absolute msm:text-base xxs:text-xs text-[8px] top-1/2 mt-8 w-[70%]  -translate-y-1/2 translate-x-1/2 right-1/2 -z-50 font-semibold text-dark-0 text-left">
+            <div className="absolute msm:text-base xxs:text-xs text-[8px] top-1/2 mt-8 w-[70%]  -translate-y-1/2 translate-x-1/2 right-1/2 -z-50 font-normal text-dark-0 text-left">
+              <div className="font-bold text-primary-0 text-2xl mb-2">
+                {elevator[floorStop].title}
+              </div>
               {elevator[floorStop].text}
             </div>
           </div>

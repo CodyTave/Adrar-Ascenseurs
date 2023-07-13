@@ -4,7 +4,7 @@ import { aboutImage1, aboutImage2 } from "../assets";
 function About() {
   return (
     <>
-      <div id="third" className="mb-52 md:mx-0 mx-8">
+      <div id="third" className="mb-52 mt-28 md:mx-0 mx-8">
         <div className="grid justify-items-center md:w-[80%] mx-auto ">
           <div className="flex flex-col lg:flex-row md:gap-x-16 ">
             <div className="my-10 text-left  lg:w-1/2">

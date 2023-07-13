@@ -21,7 +21,7 @@ function Hero() {
               </button>
             </div>
             <div className="lg:flex hidden">
-              <ImageCollage img1={heroImage1} img2={heroImage2} />
+              <ImageCollage isHero img1={heroImage1} img2={heroImage2} />
             </div>
             <div className="ml-auto my-auto">
               <ElevatorNav />
